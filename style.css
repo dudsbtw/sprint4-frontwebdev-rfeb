@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #c0392b;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav button {
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#slideshow {
+  border: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+#slideshow button {
+  margin: 10px 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1 1 170px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card:hover { background: #eee; }
+
+form {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+form textarea { height: 80px; }
+
+form button {
+  margin-top: 12px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.erro {
+  color: red;
+  font-size: 0.85rem;
+  display: none;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+#modal.aberto { display: flex; }
+
+#modal-box {
+  background: #fff;
+  padding: 30px;
+  width: 320px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+#modal-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#modal-box input {
+  width: 100%;
+  padding: 7px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+#modal-box button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#fechar-modal {
+  position: absolute;
+  top: 8px; right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#msg-login { margin-top: 10px; font-size: 0.85rem; }
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+  font-size: 0.85rem;
+}
