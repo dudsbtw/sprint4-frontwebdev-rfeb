@@ -47,4 +47,4 @@ A estrutura do projeto e a divisão dos componentes (Header, Slideshow, TechCard
 https://github.com/dudsbtw/sprint4-frontwebdev-rfeb
 
 ## Link do Deploy na Vercel
-[cole aqui o link do deploy depois de publicar na Vercel]
+https://jovi-tech-next.vercel.app
