@@ -18,7 +18,7 @@ function Produtos() {
           <div key={p.id} className="bg-white border border-gray-300 rounded p-3 text-center">
             <img src={p.image} alt={p.title} className="h-20 mx-auto object-contain" />
             <p className="text-xs mt-2 line-clamp-2">{p.title}</p>
-            <strong className="text-sm">${p.price}</strong>
+            <strong className="text-sm">R${p.price}</strong>
           </div>
         ))}
       </div>
