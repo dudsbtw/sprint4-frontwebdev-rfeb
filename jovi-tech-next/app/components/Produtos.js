@@ -2,11 +2,7 @@
 
 import { useProdutos } from "../hooks/useProdutos";
 
-/**
- * Componente de apoio criado para cumprir o requisito de consumo de API
- * (aqui uma API pública/mocked, a FakeStoreAPI). A lógica de fetch fica
- * isolada no hook useProdutos.
- */
+// lista os produtos vindos da api publica, usada como mock
 function Produtos() {
   const { produtos, carregando, erro } = useProdutos();
 

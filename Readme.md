@@ -44,7 +44,7 @@ O projeto conta com um login simulado (sem back-end/servidor real), acessível p
 A estrutura do projeto e a divisão dos componentes (Header, Slideshow, TechCards, Produtos, ContactForm, LoginModal, Footer) foram planejadas pela equipe, com base no protótipo já existente da Sprint 2. A partir desse planejamento, utilizamos a IA (Claude, da Anthropic) como apoio na implementação, principalmente para relembrar conceitos de React vistos em aula (componentes, props, hooks), agilizar a criação de alguns componentes já definidos e, na Sprint 4, apoiar a migração da estilização para Tailwind CSS, a criação das rotas públicas/privadas, a extração da lógica de autenticação, validação de formulário e consumo de API para hooks customizados (useAuth, useMensagens, useProdutos). Todo o código foi digitado, testado e depurado manualmente por nós, incluindo a correção de erros de sintaxe, importação e configuração de ambiente que surgiram durante o desenvolvimento em diferentes computadores. O projeto não foi gerado integralmente pela IA; as ideias e a estrutura já estavam moldadas pela equipe, e a IA serviu como apoio pontual ao longo da implementação.
 
 ## Link do repositório
-https://github.com/Scalone-vini/Webdev-sprint3
+https://github.com/dudsbtw/sprint4-frontwebdev-rfeb
 
 ## Link do Deploy na Vercel
-https://webdev-sprint3.vercel.app/
+[cole aqui o link do deploy depois de publicar na Vercel]

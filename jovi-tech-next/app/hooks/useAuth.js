@@ -5,10 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 const USUARIOS = { admin: "jovi2026", aluno: "facul123" };
 const CHAVE_STORAGE = "jovitech-auth";
 
-/**
- * Hook customizado que guarda a lógica de autenticação (simulada, sem back-end),
- * separando essa lógica dos componentes visuais (LoginModal, Header, /painel).
- */
+// controla login, logout e mantem o usuario salvo no localStorage
 export function useAuth() {
   const [usuario, setUsuario] = useState(null);
   const [carregado, setCarregado] = useState(false);

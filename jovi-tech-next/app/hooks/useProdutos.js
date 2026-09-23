@@ -2,11 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-/**
- * Hook customizado que consome uma API pública de terceiros (FakeStoreAPI,
- * usada aqui como mock) para listar itens em destaque, separando a chamada
- * de rede da parte visual (componente Produtos).
- */
+// busca produtos na fakestoreapi e guarda estado de carregamento e erro
 export function useProdutos() {
   const [produtos, setProdutos] = useState([]);
   const [carregando, setCarregando] = useState(true);

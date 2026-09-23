@@ -5,10 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "../hooks/useAuth";
 
-/**
- * Rota privada: só acessível a quem estiver logado (useAuth). Sem login
- * válido, redireciona automaticamente para a home.
- */
+// rota privada, redireciona pra home se nao tiver logado
 export default function Painel() {
   const { usuario, carregado, logout } = useAuth();
   const router = useRouter();

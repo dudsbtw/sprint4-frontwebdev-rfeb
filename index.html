@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <title>Jovi Tech</title>
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <h1>Jovi Tech — Câmeras</h1>
   <p>Tecnologia de câmeras inteligentes para smartphones Jovi.</p>
 
   <nav>
-    <button onclick="document.getElementById('slideshow').scrollIntoView({behavior:'smooth'})">Galeria</button>
-    <button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">Contato</button>
+    <button onclick="
+          document
+            .getElementById('slideshow')
+            .scrollIntoView({ behavior: 'smooth' })
+        ">
+      Galeria
+    </button>
+    <button onclick="
+          document
+            .getElementById('contato')
+            .scrollIntoView({ behavior: 'smooth' })
+        ">
+      Contato
+    </button>
     <button onclick="abrirModal()">Entrar</button>
     <button onclick="explorar()">Explorar</button>
   </nav>
@@ -74,7 +86,6 @@
   </footer>
 
   <script src="script.js"></script>
-
 </body>
-</html>
 
+</html>

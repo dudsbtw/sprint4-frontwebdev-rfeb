@@ -3,9 +3,7 @@
 import Link from "next/link";
 import Footer from "../components/Footer";
 
-/**
- * Rota pública: qualquer visitante pode acessar, sem precisar estar logado.
- */
+// rota publica, sem restricao de login
 export default function Sobre() {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">

@@ -4,13 +4,11 @@ import { useState } from "react";
 
 const CHAVE_STORAGE = "jovitech-mensagens";
 
-/**
- * Hook customizado com a lógica de validação e persistência das mensagens
- * de contato, separada do JSX do formulário (ContactForm).
- */
+// valida e salva as mensagens do formulario de contato no localStorage
 export function useMensagens() {
   const [erros, setErros] = useState({ nome: false, email: false, msg: false });
 
+  // confere nome, email e tamanho minimo da mensagem
   function validar(nome, email, mensagem) {
     const nomeInvalido = nome.trim().length < 2;
     const emailInvalido = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
@@ -20,6 +18,7 @@ export function useMensagens() {
     return !(nomeInvalido || emailInvalido || msgInvalida);
   }
 
+  // adiciona a mensagem na lista guardada no localStorage
   function salvar(nome, email, mensagem) {
     const mensagens = JSON.parse(localStorage.getItem(CHAVE_STORAGE) || "[]");
     mensagens.push({
